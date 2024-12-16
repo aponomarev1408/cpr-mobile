@@ -1,0 +1,42 @@
+{
+	"id": "cpr-mobile",
+	"title": "Cyberpunk RED Mobile",
+	"description": "A module that adds additional support for Mobile Improvements module for Cyberpunk RED rules.",
+	"authors": [
+		{
+			"name": "Andrey1408",
+			"url": "https://github.com/aponomarev1408/cpr_mobile"
+		}
+	],
+	"version": "1.0.0",
+	"compatibility": {
+	  "minimum": "10",
+	  "verified": "11"
+	},
+	"relationships": {
+		"systems": [{
+			"id": "cyberpunk-red-core",
+			"type": "system",
+			"compatibility": {
+			  "verified": "v0.88.2"
+			}
+		}],
+		"requires" : [
+			{
+				"id" : "mobile-improvements",
+				"type" : "module",
+				"compatibility": {
+					"verified": "1.3.1"
+				}
+			}
+		]
+	},
+
+
+	"esmodules": [
+		"scripts/cpr-mobile.js"
+	],
+	"styles" : [
+		"styles/cpr-mobile.css"
+	]
+}

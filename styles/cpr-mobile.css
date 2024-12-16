@@ -1,0 +1,156 @@
+
+.mobile-sheet.actor-sheet {
+	display: inline;
+}
+
+/*****************************/
+/* Tabs and content sections */
+/*****************************/
+
+.navtabs-mobile-primary {
+	min-width:inherit;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.mobile-content-section {
+	display: flex;
+	width: 100%;
+	height: auto;
+	border-color: var(--cpr-background-border);
+	overflow-y: scroll;
+	background-color: var(--cpr-background-box);
+}
+
+.mobile-content-section .skills-tab .skills-container {
+	display: inline;
+	width: 100%;
+}
+
+.mobile-content-section .tab.active {
+	width: 100%;
+}
+
+.mobile-content-section .right-pane-skills {
+	grid-area: skills-left;
+}
+
+.mobile-content-section div.fight-tab {
+	display: inline;
+}
+
+/**************************/
+/* Filter */
+/**************************/
+
+.mobile-content-filter .actor-details-filter {
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	width: 100%;
+	border-style: solid;
+	border-width: 0.313rem;
+	border-color: var(--cpr-background-border);
+}
+
+.mobile-content-filter .actor-details-filter .actor-details-filter-actions {
+	margin-right: 0.25em;
+}
+
+/**************************/
+/* Stats/Info tab */
+/**************************/
+/* Hide filter bar, because it's no use */
+.mobile-content-section div[data-tab="cpr-mobile-tab-stats"] .actor-details-filter-box {
+	display: none;
+}
+.mobile-content-section div[data-tab="cpr-mobile-tab-stats"] .actor-details-filter-actions {
+	display: none;
+}
+
+/**************************/
+/* Skills tab */
+/**************************/
+  
+/* Enable wrapping for skill names */
+.mobile-content-section div[data-tab="cpr-mobile-tab-skills"] .item-name {
+	flex-basis: 1fr;
+	white-space: normal; /* Allow text wrapping */
+	word-break: break-word; /* Break long words */
+	overflow-wrap: break-word;
+}
+
+/**************************/
+/* Gear tab */
+/**************************/
+
+/* Data takes too much space and it's easier to access it on item sheet */
+.mobile-content-section div[data-tab="cpr-mobile-tab-gear"] .item-detail.gear-data {
+	display: none;
+}
+
+/* For no (obvious) reason gear amount wraps sometimes */
+.mobile-content-section div[data-tab="cpr-mobile-tab-gear"] div.gear-amount input.gear-amount-input {
+	/* Leave space for " x "*/
+	width: calc(100% - 3em);
+}
+
+/**************************/
+/* Cyber tab */
+/**************************/
+
+/* Enable wrapping for cyberware names */
+.mobile-content-section div[data-tab="cpr-mobile-tab-cyber"] .item-name {
+	flex: 1;
+	white-space: normal; /* Allow text wrapping */
+	word-break: break-word; /* Break long words */
+	overflow-wrap: break-word;
+}
+
+/* Enable wrapping for cyberware names (but not resize) */
+.mobile-content-section div[data-tab="cpr-mobile-tab-cyber"] .item-detail.cyberware-data {
+	white-space: normal; /* Allow text wrapping */
+	word-break: break-all; /* Break long words */
+	overflow-wrap: break-all;
+}
+
+/* Data takes too much space and it's easier to access it on item sheet */
+.mobile-content-section  div[data-tab="cpr-mobile-tab-cyber"] .item-detail.cyberware-data {
+	display: none;
+}
+
+/* Data takes too much space and it's easier to access it on item sheet */
+.mobile-content-section  div[data-tab="cpr-mobile-tab-cyber"] .item-detail.gear-data {
+	display: none;
+}
+
+/* Data takes too much space and it's easier to access it on item sheet */
+.mobile-content-section  div[data-tab="cpr-mobile-tab-cyber"] .item-detail.cyberware-actions {
+	flex: 0 0 6rem;
+}
+
+/* Data takes too much space and it's easier to access it on item sheet */
+.mobile-content-section  div[data-tab="cpr-mobile-tab-cyber"] .item-detail.gear-actions {
+	flex: 0 0 6rem;
+}
+
+/**************************/
+/* Effects tab */
+/**************************/
+.mobile-content-section div[data-tab="cpr-mobile-tab-effects"] .effects-category .effect-source {
+	display: none;
+}
+
+.mobile-content-section div[data-tab="cpr-mobile-tab-effects"] .effect-name {
+	flex: 1;
+}
+
+.mobile-content-section div[data-tab="cpr-mobile-tab-effects"] .effect-actions {
+	flex: 0 0 5em;
+}
+
+.mobile-content-section div[data-tab="cpr-mobile-tab-effects"] .item.effect .effect-source {
+	flex: 0 0 100%;
+	order: 3;
+}
+
