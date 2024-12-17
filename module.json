@@ -5,12 +5,12 @@
 	"authors": [
 		{
 			"name": "Andrey1408",
-			"url": "https://github.com/aponomarev1408/cpr_mobile"
+			"url": "https://github.com/aponomarev1408"
 		}
 	],
 	"version": "1.0.0",
 	"compatibility": {
-	  "minimum": "10",
+	  "minimum": "11",
 	  "verified": "11"
 	},
 	"relationships": {
@@ -31,12 +31,13 @@
 			}
 		]
 	},
-
-
 	"esmodules": [
 		"scripts/cpr-mobile.js"
 	],
 	"styles" : [
 		"styles/cpr-mobile.css"
-	]
+	],
+	"download" : "https://github.com/aponomarev1408/cpr-mobile/releases/download/1.0.0/cpr-mobile-1-0-0.zip",
+	"manifest" : "https://github.com/aponomarev1408/cpr-mobile/releases/download/1.0.0/module.json",
+	"license": "GPL v3"
 }
