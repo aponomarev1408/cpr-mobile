@@ -3,16 +3,18 @@
 	  "module": "ES2020",
 	  "target": "ES2020",
 	  "paths" : {
-		"/systems/*": ["./systems/*"],
-		"/modules/*": ["./modules/*"]
+		"/foundry/*": ["../../../../*"],
+		"/systems/*": ["../../systems/*"],
+		"/modules/*": ["../*"]
 	  }
 	},
 	"exclude": ["node_modules", "**/node_modules/*"],
 	"include": [
-		"scripts/**/*.js",
+		"./**/*.js",
 
-		"scripts/foundry/public/scripts/foundry.js",
-		"foundry/client/**/*.js", "foundry/**/*.mjs"
+		"/foundry/public/scripts/foundry.js",
+		"/foundry/client/**/*.js", 
+		"/foundry/**/*.mjs"
 	],
 	"typeAcquisition": {
 	  "include": ["jquery"]
