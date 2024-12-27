@@ -1,11 +1,10 @@
 
 import CPRCharacterActorMobileSheet from "./sheets/cpr-character-sheet-mobile.js"
-import preloadHandlebarsTemplates from "./preload-templates.js"
-import CPRCharacterActorSheet from "/systems/cyberpunk-red-core/modules/actor/sheet/cpr-character-sheet.js";
-import CPRMookActorSheet from "/systems/cyberpunk-red-core/modules/actor/sheet/cpr-mook-sheet.js";
+import {initDragListener} from "./drag.js"
 
 function enableMobileSheets() {
   DocumentSheetConfig.updateDefaultSheets({ Actor: {character: "cyberpunk-red-core.CPRCharacterActorMobileSheet" } });
+  initDragListener();
   console.log("CPR-Mobile | Enable Mobile Sheets");
 }
 
@@ -20,6 +19,7 @@ Hooks.on("init", function() {
     types: ["character", "mook"],
     makeDefault: false,
   });
+
 
   console.log("CPR-Mobile | Initialized");
 });

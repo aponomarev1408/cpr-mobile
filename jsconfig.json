@@ -12,9 +12,9 @@
 	"include": [
 		"./**/*.js",
 
-		"/foundry/public/scripts/foundry.js",
-		"/foundry/client/**/*.js", 
-		"/foundry/**/*.mjs"
+		"../../../../code/resources/app/public/scripts/foundry.js",
+		"../../../../code/resources/app/client/**/*.js", 
+		"../../../../code/resources/app/**/*.mjs"
 	],
 	"typeAcquisition": {
 	  "include": ["jquery"]

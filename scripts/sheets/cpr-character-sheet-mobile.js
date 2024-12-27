@@ -28,16 +28,4 @@ export default class CPRCharacterActorMobileSheet extends CPRCharacterActorSheet
 			],
 		});
 	}
-
-	activateListeners(html) {
-		super.activateListeners(html);
-
-		// Disable item draggability
-		// (Makes it hard to scroll on phones)
-		const itemElements = html.find('.mobile-sheet .item[data-item-id]');
-		itemElements.removeAttr('draggable');
-
-		const effectElements = html.find('.mobile-sheet .item.effect[data-effect-id]')
-		effectElements.removeAttr('draggable')
-	}
 }
