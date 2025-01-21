@@ -41,6 +41,12 @@
 }
 
 /**************************/
+/**************************/
+/* CHARACTER SHEET        */
+/**************************/
+/**************************/
+
+/**************************/
 /* Filter */
 /**************************/
 
@@ -154,3 +160,55 @@
 	order: 3;
 }
 
+/**************************/
+/**************************/
+/* ITEM SHEET             */
+/**************************/
+/**************************/
+
+.mobile-sheet .navtabs-item.cpr-tabs.nav.text-semi {
+	flex-direction: column;
+}
+.mobile-sheet.item-sheet .item-bottom-pane {
+	max-width: 100%;
+	grid-template-rows: 3.5rem auto;
+}
+
+/**************************/
+/* Spotlight omnisearch */
+/**************************/
+@media screen and (max-width: 650px) {
+	#spotlight.app.window-app {
+		max-height: 50% !important;
+		height: 50% !important;
+		min-height: 50% !important;
+	}
+	
+	#spotlight main section #search-result li {
+		font-size: 1rem !important;
+	}
+}
+
+
+/**************************/
+/* Journal                */
+/**************************/
+@media screen and (max-width: 650px) {
+	aside.sidebar.directory.flexcol.journal-sidebar {
+		display: none !important;
+	}
+
+
+	section.journal-entry-content
+	{
+		max-width: 100%;
+	}
+	section.journal-page-content {
+		/* font-size: 6.96vh !important; */
+		text-wrap: pretty;
+	}
+	
+	section.journal-entry-content {
+		font-size: 1.8vw !important;
+	}
+}
